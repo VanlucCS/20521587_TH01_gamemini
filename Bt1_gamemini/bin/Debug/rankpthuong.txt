@@ -1,0 +1,9 @@
+luc 89.7
+luc 95
+luc 3
+luc 100
+x 0.4
+in 0
+dasd 18.2
+f 0
+haha 56

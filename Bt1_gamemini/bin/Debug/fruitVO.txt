@@ -1,0 +1,20 @@
+apple
+avocado
+banana
+blackberry
+cantaloupe
+cherry
+fig
+grapes
+green olives
+kiwi
+lemon
+lime
+mango
+mangosteen
+orange
+papaya
+peach
+pineapple
+strawberry
+watermelon

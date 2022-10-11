@@ -1,0 +1,15 @@
+luc 89.7
+luc 95
+luc 3
+luc 100
+x 0.4
+in 0
+dasd 18.2
+f 0
+prooo 2.1
+doanxem 122.9
+doanxem 157.9
+doanxem 0
+vanluc 156.4
+doanxem 176.4
+Đoánxem 193.2
