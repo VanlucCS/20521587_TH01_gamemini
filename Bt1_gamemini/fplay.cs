@@ -37,7 +37,11 @@ namespace Bt1_gamemini
         {
             InitializeComponent();
             circButton1.Visible = false;
-            
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
             ten = name;
             kho = dokho;
             topic = tp;
@@ -49,23 +53,22 @@ namespace Bt1_gamemini
             }
             if (dokho == "thuong")
             {
-                anstime = 10;
+                anstime = 12;
                 num_vo = 20;
                 heso = 4;
             }
             if (dokho == "kho")
             {
-                anstime = 5;
+                anstime = 6;
                 num_vo = 20;
                 heso = 6;
             }
             if (dokho == "siucap")
             {
-                anstime = 2;
+                anstime = 4;
                 num_vo = 20;
-                heso = 200;
+                heso = 50;
             }
-            //pbshow.Image = global::Bt1_gamemini.Resource1.;
             dt = DateTime.Now;
             string gamepath = "v";
             if (tp == "v")
@@ -159,7 +162,11 @@ namespace Bt1_gamemini
             string id = topic + idx.ToString();
             this.circButton1.Enabled = true;
             this.AcceptButton = circButton1;
-
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = true;
+            pictureBox4.Visible = true;
+            pictureBox5.Visible = true;
             this.pbshow.Image = (Image)rm.GetObject(id);
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -188,14 +195,14 @@ namespace Bt1_gamemini
         {
             pbsoundon.Visible = false;
             pbsoundoff.Visible = true;
-            wmpsound.Ctlcontrols.play();
+            wmpsound.Ctlcontrols.stop();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             pbsoundon.Visible = true;
             pbsoundoff.Visible = false;
-            wmpsound.Ctlcontrols.stop();
+            wmpsound.Ctlcontrols.play();
         }
 
         private void cbutton9_Click(object sender, EventArgs e)
