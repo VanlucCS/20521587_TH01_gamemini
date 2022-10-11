@@ -37,7 +37,7 @@ namespace Bt1_gamemini
         {
             InitializeComponent();
             circButton1.Visible = false;
-
+            
             ten = name;
             kho = dokho;
             topic = tp;
@@ -103,10 +103,13 @@ namespace Bt1_gamemini
                 double temppoint = Math.Round((anstime - (DateTime.Now - dt).TotalSeconds) * heso, 1);
                 Point += temppoint < 0 ? 0 : temppoint;
                 Count++;
+                pictureBox6.Visible = true;
                 wmpRightsound.Ctlcontrols.play();
+
             }
             else
             {
+                pictureBox7.Visible = true;
                 wmpwrong.Ctlcontrols.play();
             }
             if (socau - 1 == num_vo)
@@ -134,6 +137,8 @@ namespace Bt1_gamemini
             Thread.Sleep(1000);
             lans.Text = "";
             label6.Text = socau.ToString();
+            pictureBox6.Visible = false;
+            pictureBox7.Visible = false;
 
             timer1.Start();
         }

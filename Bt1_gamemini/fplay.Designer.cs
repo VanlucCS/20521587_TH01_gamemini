@@ -60,6 +60,8 @@ namespace Bt1_gamemini
             this.wmpwrong = new AxWMPLib.AxWindowsMediaPlayer();
             this.wmpRightsound = new AxWMPLib.AxWindowsMediaPlayer();
             this.wmpsound = new AxWMPLib.AxWindowsMediaPlayer();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbshow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +73,8 @@ namespace Bt1_gamemini
             ((System.ComponentModel.ISupportInitialize)(this.wmpwrong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wmpRightsound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wmpsound)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // tbans
@@ -433,6 +437,30 @@ namespace Bt1_gamemini
             this.wmpsound.TabIndex = 28;
             this.wmpsound.Visible = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::Bt1_gamemini.Properties.Resources.correct;
+            this.pictureBox6.Location = new System.Drawing.Point(202, 201);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 54;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::Bt1_gamemini.Properties.Resources.cross;
+            this.pictureBox7.Location = new System.Drawing.Point(202, 201);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 55;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
+            // 
             // fplay
             // 
             this.AcceptButton = this.circButton1;
@@ -441,6 +469,8 @@ namespace Bt1_gamemini
             this.BackgroundImage = global::Bt1_gamemini.Properties.Resources.bglast;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1160, 589);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbutton3);
@@ -485,6 +515,8 @@ namespace Bt1_gamemini
             ((System.ComponentModel.ISupportInitialize)(this.wmpwrong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wmpRightsound)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wmpsound)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -521,5 +553,7 @@ namespace Bt1_gamemini
         private cbutton cbutton3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
